@@ -4,7 +4,7 @@
   --primary-main3: #0B3353;   
   --primary-main4: #001323;   
   --text-black: #1A1A1A; 
-  --m-height: calc(100vh - (145px + 35px));
+  --m-height: calc(100vh - (110px + 35px));
 }   
 a{
   text-decoration: none !important; 
@@ -18,29 +18,29 @@ body{
   background-color: #f5f5f5;
 }       
 header{ 
-  height: 102px; 
+  height: 80px; 
   background-color: #FFFFFF;
   box-shadow: 0px 4px 4px 0px #0000001A;  
   padding: 16px 40px; 
 }    
-header .limg{ 
-  width: 100%;
+header .limg{  
   max-width: 100%;
+  height: 50px;
 }
 main{
-  padding: 145px 40px 35px;
+  padding: 110px 40px 35px 20px;
   position: relative;
 }
 main .menuleft{
   padding: 30px 15px;
   background-color: #FFFFFF; 
   box-shadow: 4px 4px 15px 2px #00000014; 
-  width: 380px;
+  width: 320px;
   border-radius: 15px;
-  height: var(--m-height);
+  min-height: var(--m-height);
   position: absolute;
-  left: 40px;
-  top: 145px;
+  left: 30px;
+  top: 110px;
   z-index: 99;
 }
 
@@ -53,8 +53,8 @@ main .menuleft{
 }
 
 .avatar {
-  width: 81px;
-  height: 81px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   background: #f0f0f0;
   display: flex;
@@ -63,20 +63,20 @@ main .menuleft{
   font-size: 22px;
 }
 .avatar img{
-  width: 81px;
-  height: 81px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%; 
   object-fit: cover;
 }
 .username {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   color: #000;
 }
 
 .email {
   font-weight: 400;
-  font-size: 20px; 
+  font-size: 16px; 
   color: var(--primary-main);
 }
  
@@ -90,7 +90,7 @@ main .menuleft{
 
 .balance-card .label {
   font-weight: 400;
-  font-size: 20px; 
+  font-size: 16px; 
   color: var(--primary-main);
   letter-spacing: 1px;
 }
@@ -98,21 +98,18 @@ main .menuleft{
 .balance-card h2 {
   font-weight: 400;
   margin: 6px 0 0;
-  font-size: 35px;
+  font-size: 32px;
 }
 
 .balance-card small {
   font-size: 14px;
   opacity: 0.8;
-}
-
-/* Menu */
+} 
 .menu {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
+} 
 .menu li {
   display: flex;
   align-items: center;
@@ -128,7 +125,7 @@ main .menuleft{
   font-weight: 400;
   display: block;
   width: 100%;
-  font-size: 20px; 
+  font-size: 18px; 
   color: #818181;
 }
 .menu li.active a{
@@ -141,9 +138,9 @@ main .menuleft{
   border-radius: 15px;
 }
 .menu li img{
-  width: 30px;
-  height: 30px;
-  margin-right: 25px;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
 } 
 .menu li:hover{
   background: #f5f5f5;
@@ -151,7 +148,7 @@ main .menuleft{
 main .main{ 
   width: 100%;
   height: 300px;
-  padding-left: 430px;
+  padding-left: 360px;
   position: relative;
 } 
 main .main{  
@@ -205,29 +202,32 @@ main .main h2{
   font-weight: 400;
   font-size: 20px; 
   color: var(--primary-main);
+  margin-bottom: 0px;
+  font-size: 16px;
 }
 .bot-menu{
   position: absolute;
   bottom: 0;
   width: 100%; 
   left: 0; 
-  padding-left: 430px;
+  padding-left: 360px;
 }
 .botx{ 
   height: 82px;
   box-shadow: 2px 4px 15px 2px #00000017; 
-  padding: 23px 40px 0px 170px; 
+  padding: 23px 40px 0px 100px; 
   font-weight: 400; 
   font-size: 24px;   
   color: #727272;
   position: relative;
+  border-radius: 15px;
 }
 .botx img{ 
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  left: 40px;
-  top: 23px;
+  left: 30px;
+  top: 30px;
 }
 .btn-get{
   width: 100%;
@@ -244,6 +244,8 @@ main .main h2{
   background-color: #f5f5f5;
   padding: 20px; 
   box-shadow: 2px 4px 15px 2px #00000017; 
+  width: calc(100% - 28px);
+  margin-left: 14px;
 }
 .virtual h3{
   margin-bottom: 25px;
@@ -284,16 +286,19 @@ main .main h2{
 
 .action-card{
   width: calc(100% - 28px);
+  margin-left: 14px;
   border-radius: 15px;
   outline: 14px solid #fff;
   background-color: #f5f5f5;
-  padding: 20px 0px;
+  padding: 0px 0px;
   margin-bottom: 15px;
   box-shadow: 2px 4px 15px 2px #00000017; 
 } 
 .action-list{
   list-style: none;
   padding-left: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .action-list li{
   padding-left: 0px;
@@ -342,6 +347,8 @@ main .main h2{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: calc(100% - 28px);
+  margin-left: 14px;
 }
 .notification img{
   width: 120px;
@@ -351,11 +358,65 @@ main .main h2{
   display: block;
   margin: auto;
 }
-.notification p{
+.main h6{
   font-size: 18px;
-  margin-top: 20px;
-}
+  margin-bottom: 25px; 
+} 
 
+.account-card{
+  width: calc(100% - 28px);
+  margin-left: 14px;
+  border-radius: 15px;
+  outline: 14px solid #fff;
+  background-color: #f5f5f5;
+  padding: 0px 0px;
+  margin-bottom: 35px;
+  box-shadow: 2px 4px 15px 2px #00000017; 
+} 
+.account-list{
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.account-list li{
+  padding-left: 0px;
+  display: block;
+  position: relative;
+  width: 100%; 
+  border-bottom: 1px solid #e5e7eb;
+}  
+.account-list li:last-child{ 
+  border-bottom: 0px solid #e5e7eb;
+}  
+.account-list li a{
+  padding-left: 0px;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 8px 10px 12px;
+}  
+.account-list .material-symbols-outlined{
+  font-size: 30px;
+  color: var(--primary-main);
+  margin-top: 13px;
+  position: absolute;
+  top: 12px;
+  margin-left: -5px;
+}
+.account-list .text{
+  color: #000;
+  font-size: 18px;
+  padding-left: 45px;
+} 
+.account-list .arrow{
+  color: #000;
+  font-size: 18px;
+  position: absolute;
+  right: 0px;
+  top: 25px;
+}
 
 
 
