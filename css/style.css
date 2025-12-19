@@ -4,6 +4,7 @@
   --primary-main3: #0B3353;   
   --primary-main4: #001323;   
   --text-black: #1A1A1A; 
+  --m-height: calc(100vh - (145px + 35px));
 }   
 a{
   text-decoration: none !important; 
@@ -20,7 +21,7 @@ header{
   height: 102px; 
   background-color: #FFFFFF;
   box-shadow: 0px 4px 4px 0px #0000001A;  
-  padding: 16px 40px;
+  padding: 16px 40px; 
 }    
 header .limg{ 
   width: 100%;
@@ -36,10 +37,11 @@ main .menuleft{
   box-shadow: 4px 4px 15px 2px #00000014; 
   width: 380px;
   border-radius: 15px;
-  height: calc(100vh - (145px + 35px));
+  height: var(--m-height);
   position: absolute;
   left: 40px;
   top: 145px;
+  z-index: 99;
 }
 
 /* Profile */
@@ -47,7 +49,7 @@ main .menuleft{
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .avatar {
@@ -120,9 +122,12 @@ main .menuleft{
   color: #777;
   cursor: pointer;
   transition: 0.2s;
+  height: 58px;
 }
 .menu li a{
   font-weight: 400;
+  display: block;
+  width: 100%;
   font-size: 20px; 
   color: #818181;
 }
@@ -131,23 +136,29 @@ main .menuleft{
   font-size: 20px; 
   color: var(--primary-main);
 }
+.menu li.active { 
+  border: 2px solid var(--primary-main);
+  border-radius: 15px;
+}
 .menu li img{
   width: 30px;
   height: 30px;
   margin-right: 25px;
 } 
-.menu li:hover {
+.menu li:hover{
   background: #f5f5f5;
 }
 main .main{ 
   width: 100%;
   height: 300px;
   padding-left: 430px;
+  position: relative;
 } 
 main .main{  
   font-weight: 400; 
   font-size: 35px;    
   margin-bottom: 20px;
+  min-height: var(--m-height);
 } 
 .mycard{
   height: 227px;
@@ -172,6 +183,44 @@ main .main{
   justify-content: center;
   align-items: center;
 }
+.mycard.addcard img{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.mycard.addcard h6{
+  font-weight: 400;
+  font-size: 20px; 
+  color: var(--primary-main);
+}
+.bot-menu{
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+  left: 0; 
+  padding-left: 430px;
+}
+.botx{ 
+  height: 82px;
+  box-shadow: 2px 4px 15px 2px #00000017; 
+  padding: 23px 40px 0px 170px; 
+  font-weight: 400; 
+  font-size: 24px;   
+  color: #727272;
+  position: relative;
+}
+.botx img{ 
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 40px;
+  top: 23px;
+}
+
+
+
 
 /*  
   transition: 0.3s; 
