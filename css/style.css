@@ -1,0 +1,1615 @@
+:root {
+  --primary-main: #4987F1;   
+  --primary-main2: #5681BF;  
+  --primary-main3: #0B3353;   
+  --primary-main4: #001323;   
+  --text-black: #1A1A1A; 
+}   
+a{
+  text-decoration: none !important; 
+}
+a:hover{
+  text-decoration: none;
+} 
+body{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;   
+}      
+.th{
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-style: normal;   
+}      
+nav.navbar{
+  height: 83px;
+}
+nav.navbar .navbar-collapse .nav-item .nav-link{
+  color: var(--text-black);  
+  font-weight: 500;
+  font-size: 20px;
+}
+nav.navbar .navbar-collapse .nav-item {
+  margin-left: 22px;
+  margin-right: 22px;
+  transition: 0.3s; 
+  padding: 5px 16px;  
+}
+nav.navbar .navbar-collapse .nav-item.active{ 
+  border-radius: 40px;
+  background-color: var(--primary-main2); 
+}
+nav.navbar .navbar-collapse .nav-item:hover{ 
+  border-radius: 40px; 
+  background-color: var(--primary-main2); 
+}
+nav.navbar .navbar-collapse .nav-item.active .nav-link{ 
+  color: white; 
+}
+nav.navbar .navbar-collapse .nav-item:hover .nav-link{  
+  color: white; 
+}
+.tel-top{ 
+  font-weight: 500; 
+  font-size: 16px;    
+  color: var(--text-black);
+}
+main{
+  padding-top: 83px;
+}
+.navbar .btn-line{
+  padding: 7px 24px;
+  background-color: #3ACE01;
+  border-radius: 50px;
+  font-weight: 500; 
+  font-size: 15px;   
+  color: white; 
+  font-family: "Noto Sans Thai", sans-serif; 
+}
+.banner-cover{
+  height: 85vh;
+  background: url('../images/bg-cover.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.banner-cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  background: rgba(0,0,0,0.24); /* <= opacity 0.24 */
+} 
+.banner-cover > div {
+  position: relative;
+  z-index: 1;
+}
+.banner-cover  h1{ 
+  font-weight: 500 !important; 
+  font-size: 60px !important; 
+  line-height: 60px; 
+  text-align: center;
+  margin-bottom: 25px;
+  vertical-align: middle; 
+}
+.banner-cover p{ 
+  font-weight: 500; 
+  font-size: 36px; 
+  line-height: 30.4px; 
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 25px; 
+} 
+.banner-cover button{ 
+  border-radius: 40px;
+  padding: 16px 48px; 
+  gap: 5px; 
+  opacity: 1;
+  background-color: var(--primary-main); 
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 500; 
+  font-size: 32px; 
+  line-height: 30.4px; 
+  text-align: center;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #fff;
+
+} 
+.sec-form {
+  background: #f7f7f7; 
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+.form-box {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px; 
+  padding-top: 48px;
+  padding-bottom: 90px;
+  border-radius: 20px;
+}
+.form-box h5{ 
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  font-family: "Noto Sans Thai", sans-serif; 
+}
+.form-box p{  
+  font-weight: 400; 
+  font-size: 32px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Noto Sans Thai", sans-serif; 
+  margin-bottom: 48px;
+}
+.m-div{
+  max-width: 620px;
+  width: 100%;
+} 
+/* สีแดงของดอกจันทร์ */
+.req-star {
+  color: red;
+  font-weight: bold;
+} 
+/* ให้ floating label ดูเนียนขึ้น */
+.form-floating > label {
+  padding: 0.75rem 1rem;
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-size: 15px;
+  border-radius: 8px;
+} 
+/* ปรับ input ให้สูงเหมือน UI สมัยใหม่ */
+.form-floating > .form-control {
+  height: calc(3.2rem + 2px);
+  padding: 1rem 1rem;
+  font-family: "Noto Sans Thai", sans-serif; 
+  border: 1px solid #8F8F8F;
+  margin-bottom: 24px;
+} 
+/* เมื่อ focus → label ลอยขึ้นแบบนุ่ม */
+.form-floating > .form-control:focus ~ label {
+  color: #333;
+  font-family: "Noto Sans Thai", sans-serif; 
+} 
+/* สีขอบตอน focus */
+.form-control:focus {
+  border-color: #7a7a7a;
+  box-shadow: none;
+}
+.form-control { 
+  font-family: "Noto Sans Thai", sans-serif; 
+} 
+.m-div .row label{
+  margin-left: 13px;
+}
+.btn-register {
+  background: var(--primary-main3);   
+  color: #fff;
+  border-radius: 14px;
+  padding: 18px 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.btn-register:hover{
+  background: var(--primary-main4); 
+  color: #fff;
+} 
+.btn-line {
+  background: #00C300; 
+  color: #fff;
+  border-radius: 14px;
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-line:hover{
+  background: #00C300; 
+  color: #fff;
+}  
+.btn-call {
+  background: var(--primary-main);   
+  color: #fff;
+  border-radius: 14px;
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-call:hover{
+  background: var(--primary-main2);  
+  color: #fff;
+} 
+/* remove underline */
+.btn-line:hover,
+.btn-call:hover {
+  color: #fff;
+}
+.m-div p{ 
+  margin-top: 24px;
+  color: var(--text-black);
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.m-div p a{  
+  color: #DB1F35;
+  text-decoration: underline !important;
+}
+.sec-form h2{
+  margin-top: 48px;
+  font-family: "Noto Sans Thai", sans-serif; 
+  text-align: center;
+}
+.video-section {
+  width: 100%;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* รูป preview */
+.video-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+ 
+.video-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0B3353;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ปุ่ม play ให้อยู่ด้านบน overlay */
+.play-btn {
+  width: 132px;
+  height: 93px; 
+  background-image: url(../images/logos_youtube-icon.png);
+  position: absolute;
+  top: calc(50% + 100px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 10;
+}
+.video-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.btn-play {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-play:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-left: 22px solid red;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+}
+.over-center{
+  position: absolute;
+  transform: translate(-50%, -50%) !important;
+  left: 50%;
+  top: 50%;
+  z-index: 11;
+} 
+.video-section  h1{ 
+  font-weight: 500; 
+  font-size: 96px; 
+  line-height: 78px; 
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+/* เมื่อเล่นวิดีโอ → เอา overlay ออก */
+.video-wrapper.no-overlay::after {
+  opacity: 0 !important;
+}
+.sec-gallery{
+  background-color: #fff;
+  padding: 64px;
+  position: relative;
+} 
+.sec-gallery h2{ 
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  margin-bottom: 32px;
+} 
+.sec-gallery img {
+  height: 444px;
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+} 
+.gallery-img-wrap {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery-img-wrap img {
+  height: 444px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+} 
+.gallery-img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);  
+  z-index: 1;
+}
+.sec-pro-des{
+  padding: 64px;
+  background-color: var(--primary-main3);
+}
+.sec-pro-des h5{
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  vertical-align: middle;
+  color: white;
+}
+.sec-pro-des h4{ 
+  font-weight: 500; 
+  font-size: 64px; 
+  line-height: 120%; 
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 32px;
+} 
+.sec-pro-des h6{ 
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 400; 
+  font-size: 24px; 
+  line-height: 120%; 
+  vertical-align: middle;
+  color: white; 
+  margin-bottom: 16px;
+}
+.sec-pro-des p{ 
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 400; 
+  font-size: 16px; 
+  line-height: 150%; 
+  vertical-align: middle;
+  color: white; 
+  margin-bottom: 32px;
+} 
+.sec-pro-des ul{ 
+  list-style: none;
+  padding-left: 0px;
+}
+.sec-pro-des ul li{ 
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  position: relative;
+  font-weight: 400; 
+  font-size: 16px; 
+  line-height: 150%; 
+  vertical-align: middle;
+  color: white; 
+}
+.sec-pro-des ul li:nth-child(odd){ 
+  background-color: rgba(255,255,255,0.05);
+}
+.sec-pro-des ul li span{ 
+  float: right;
+  color: #FFD964;
+}
+.sec-pro-des img.pro-des{ 
+  object-fit: cover;
+  height: 780px;
+  width: 100%;
+  border-radius: 8px; 
+  box-shadow: 0px 2px 8.13px 0px #00000009; 
+  box-shadow: 0px 10px 50px 0px #00000012;
+  margin-bottom: 32px;
+}
+.sec-pro-des .btn-load{ 
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 400; 
+  font-size: 20px; 
+  line-height: 100%; 
+  text-align: center;
+  text-transform: capitalize; 
+  background-color: var(--primary-main);  
+  padding: 8px 20px;
+  color: white;
+  border-radius: 46px;
+  height: 46px;
+}
+.sec-pro-des .btn-loa img{ 
+  margin-right: 10px;
+}
+.sec-faci{
+  background-color: white;
+  padding: 64px;
+}
+.sec-faci h2{
+  font-family: "Noto Sans Thai", sans-serif;  
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  margin-bottom: 32px;
+} 
+.sec-faci img{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 24px;
+  display: block;
+  margin-top: 16px;
+}
+.sec-faci h6{
+  font-family: "Noto Sans Thai", sans-serif; 
+  text-align: center; 
+  font-weight: 400;
+  font-size: 16px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+}
+.sec-faci img.w80{
+  width: 80px;
+  height: 64px; 
+}
+.sec-map{
+  background-color: #f7f7f7;
+  padding: 64px;
+}
+.sec-map h2{ 
+  font-family: "Noto Sans Thai", sans-serif; 
+  margin-bottom: 32px; 
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+}
+.sec-map h3{ 
+  margin-bottom: 32px;  
+  font-weight: 400;
+  font-size: 24px; 
+  line-height: 100%; 
+  text-align: center;
+  font-family: "Noto Sans Thai", sans-serif;  
+}
+.mmap{
+  margin-bottom: 32px;
+}
+.loca-near{
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loca-near .km{
+  border-radius: 100%;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--primary-main); 
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  color: #FFD964; 
+} 
+.loca-near .km span{  
+  font-size: 32px;
+  font-family: "Noto Sans Thai", sans-serif; 
+  color: #000000;
+}
+.sec-map h4{ 
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 400;
+  font-size: 24px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+}
+.sec-map h5{ 
+  font-family: "Noto Sans Thai", sans-serif;  
+  font-weight: 600; 
+  font-size: 20px; 
+  line-height: 18px; 
+  vertical-align: middle; 
+  margin-top: 32px;
+}
+.sec-map ul li{ 
+  font-family: "Noto Sans Thai", sans-serif;  
+  font-weight: 400;
+  font-size: 16px; 
+  line-height: 26.6px; 
+  vertical-align: middle; 
+}
+.sec-plan {
+  padding: 64px;
+} 
+.sec-plan h2{ 
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 32px;
+} 
+.sec-plan .tab-pane .carousel-item img{
+  height: 585px;
+  width: 872px;
+  object-fit: contain;
+}
+.nav-tabs{ 
+  border: 0px solid;
+}
+.nav-tabs .nav-item{
+  padding: 10px 18px; 
+}
+.nav-tabs .nav-item .nav-link{
+  padding: 0px;
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 400;
+  font-size: 24px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle;
+  color: var(--text-black);
+  border: 0px solid;
+}
+.nav-tabs .nav-item .nav-link.active{ 
+  color: var(--primary-main);
+  border-bottom: 2px solid var(--primary-main);
+}
+.tab-content .carousel-control-prev , .tab-content .carousel-control-next{
+  width: 82px;
+  height: 82px;
+  background: rgba(233, 233, 233, 0.8);
+  opacity: 1;
+  border-radius: 100%;
+  top: calc(50% - 41px);
+}
+.projectx{
+  background-color: rgba(0, 0, 0, 0.52);
+  color: white; 
+  font-weight: 400; 
+  font-size: 20px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  border-radius: 20px;
+  padding: 4px 6px;
+  width: 65px;
+  height: 32px;
+  display: block;
+  margin: auto;
+}
+.roomx{
+  background-color: rgba(0, 0, 0, 0.52);
+  color: white; 
+  font-weight: 400; 
+  font-size: 20px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  border-radius: 20px;
+  padding: 4px 6px;
+  width: 65px;
+  height: 32px;
+  display: block;
+  margin: auto;
+}
+.sec-project-intro{
+  background-color: #f7f7f7;
+  padding: 64px; 
+}
+.sec-project-intro h2{ 
+  font-family: "Noto Sans Thai", sans-serif; 
+  margin-bottom: 32px; 
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+}  
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px 0px #181A200D;
+
+} 
+.project-card img {
+  width: 100%;
+  height: 276px;
+  object-fit: cover;
+} 
+.project-card .info-box{ 
+  height: 102px;
+  padding: 16px;
+  background: rgba(255,255,255,1);
+  /* transform: translateY(100%); */
+  transition: .3s ease; 
+
+} 
+.project-card .info-box h5{ 
+  font-weight: 500; 
+  font-size: 17px; 
+  line-height: 120%;  
+  vertical-align: middle;
+  margin-top: 32px;
+}
+.project-card .label{
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-size: 15px;
+  font-weight: 500; 
+  padding: 10px 16px;
+  position: absolute;
+  height: 38px;
+  top: calc(276px - 19px);
+  border-radius: 20px;
+  color: #fff; 
+  left: 16px;  
+}
+.project-card .label.bg-success{
+  background-color: #54A956 !important;
+}
+.project-card .label.bg-success:after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 64px;
+  bottom: -65px;
+  left: 0;
+  background-color: #54A956 !important;
+} 
+.project-card .label.bg-danger{
+  background-color: #DD4739!important;
+}
+.project-card .label.bg-danger:after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 64px;
+  bottom: -65px;
+  left: 0;
+  background-color: #DD4739 !important;
+}
+
+.project-card .label.bg-primary{
+  background-color: #4987F1 !important;
+}
+.project-card .label.bg-primary:after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 64px;
+  bottom: -65px;
+  left: 0;
+  background-color: #4987F1 !important;
+}
+.swiper.project-swiper{ 
+  padding-bottom: 50px !important; 
+}  
+.swiper.pagination{  
+  bottom: -10px !important; 
+}   
+.swiper-pagination-bullet{
+  width: 13px !important;
+  height: 13px !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: var(--primary-main3) !important;
+}
+.swiper-button-next{
+  border-radius: 100% !important;
+  background: rgba(255,255,255,0.8) !important;
+  width: 82px !important;
+  height: 82px !important;
+  top: 138px !important;
+} 
+.swiper-button-prev{
+  border-radius: 100% !important;
+  background: rgba(255,255,255,0.8) !important;
+  width: 82px !important;
+  height: 82px !important;
+  top: 138px !important;
+}
+footer{
+  background-color: var(--primary-main4);
+  padding: 60px 105px;
+}
+footer .row1{
+  margin-bottom: 90px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+footer .row1 .flogo{
+  height: 45px;
+}
+.social img{
+  height: 15px;
+  width: auto;
+  margin: 15px;
+}
+footer span{ 
+  font-weight: 500; 
+  font-size: 19px; 
+  line-height: 19px; 
+  vertical-align: middle;
+  color: white;
+  padding-right: 20px;
+}
+footer h4{ 
+  font-weight: 500; 
+  font-size: 19px; 
+  line-height: 19px; 
+  vertical-align: middle; 
+  color: rgba(255, 255, 255, 0.47);
+  margin-bottom: 25px;
+}
+footer ul{ 
+  list-style: none;
+  padding-left: 0px;
+}
+footer ul li{ 
+  margin-bottom: 10px;
+} 
+footer ul li a{  
+  font-weight: 400; 
+  font-size: 15px; 
+  color: white;
+  transition: 0.3s; 
+  line-height: 28.5px;  
+}
+footer ul li a:hover{ 
+  text-decoration: underline !important;
+}
+footer ul li p{  
+  font-weight: 400; 
+  font-size: 15px; 
+  color: white; 
+  line-height: 28.5px;  
+} 
+.form-email{
+  position: relative;
+}
+.form-email .form-control{
+  border: none !important;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  font-weight: 400; 
+  font-size: 15px; 
+  color: white; 
+  line-height: 28.5px;  
+  padding: 5px 120px 20px 0px; 
+} 
+.form-email .form-control::placeholder{
+  font-weight: 400; 
+  font-size: 15px; 
+  color: white; 
+  line-height: 28.5px;  
+}
+.form-email .btn{
+  background-color: rgba(255, 255, 255, 0.08);
+  font-weight: 400; 
+  font-size: 15px; 
+  color: white; 
+  line-height: 28.5px;  
+  width: 118px;
+  height: 43px;
+  border-radius: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.btn-app{
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 13px 38px 13px 75px;
+  margin-bottom: 20px;
+  width: 220px;
+  height: 64px;
+  color: white; 
+  font-weight: 500; 
+  font-size: 16px; 
+  line-height: 19.2px;
+  letter-spacing: 0%;  
+  text-align: left;
+  position: relative;
+}
+.btn-app span{ 
+  font-weight: 400; 
+  font-size: 13px; 
+  line-height: 15.6px;  
+  color: white;   
+}
+.btn-app::after{
+  content: "";
+  position: absolute; 
+  top: 20px;
+  width: 1px;
+  height: 20px;
+  left: 58px;
+  background: rgba(255, 255, 255, 0.2); 
+} 
+.btn-app img{ 
+  position: absolute; 
+  top: 20px;
+  width: 20px; 
+  left: 25px; 
+}
+.btn-app:hover{
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: white;   
+}
+header .navbar-toggler{
+  border: none;
+  outline: none;
+  margin-right: -20px;
+} 
+.offcanvas {
+  width: 280px;
+}
+
+.offcanvas-body .nav-link {
+  padding: 12px 0;
+  font-size: 16px;
+  font-family: "Noto Sans Thai", sans-serif; 
+}
+.offcanvas-body a{
+  padding: 12px 0;
+  font-size: 16px;
+  font-family: "Noto Sans Thai", sans-serif; 
+}
+.swiper-button-prev::after{
+  content: unset !important;
+}
+.swiper-button-next::after{
+  content: unset !important;
+}
+footer h6{
+  text-align: center; 
+  font-weight: 400; 
+  font-size: 15px; 
+  line-height: 28.5px; 
+  text-align: center; 
+  color: white;
+  padding-top: 40px;
+  margin-top: 80px !important;
+  margin-bottom: 0px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.sec-search{
+  padding: 48px;
+  background-color: #ffffff;
+}
+.sec-search h2{
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  margin-bottom: 10px;
+  font-family: "Noto Sans Thai", sans-serif; 
+}
+.sec-search h4{
+  font-weight: 400; 
+  font-size: 32px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  margin-bottom: 32px;
+  font-family: "Noto Sans Thai", sans-serif; 
+}
+.sec-search .form-control{
+  height: 56px;
+  border: 1px solid #8F8F8F;
+  border-radius: 56px;
+  padding: 13.5px 44px;
+  width: 100%; 
+  font-weight: 400; 
+  font-size: 15px; 
+  line-height: 28.5px; 
+  vertical-align: middle;
+  font-family: "Noto Sans Thai", sans-serif;  
+  color: #000000;
+}
+.sec-search .form-control::placeholder{ 
+  color: #5D637E;
+}
+.f-search{
+  position: relative;
+  max-width: 620px;
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+.f-search .search{
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 48px;
+}
+.f-search .pin{
+  position: absolute;
+  right: 10px;
+  top: 16px; 
+  width: 24px;
+  height: 24px;
+}
+.box-off{
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 38px;
+}
+
+.box-off img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
+} 
+.box-off::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.6) 100%
+  );
+  z-index: 1;
+} 
+.box-off h5{
+  position: absolute;
+  bottom: 16px;
+  left: auto;
+  right: auto;
+  color: #fff;
+  z-index: 2;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-size: 32px;
+  font-weight: 400;
+}
+.sec-search .row .col-lg-3{
+  padding: 8px !important;
+  margin-bottom: 16px;
+}
+.sec-search .btn{ 
+  height: 38px; 
+  opacity: 1;
+  border-radius: 18px;
+  padding: 10px 16px;  
+  border: 1px solid rgba(93, 99, 126, 1);
+  color: black;
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 500; 
+  font-size: 15px; 
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center; 
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.sec-search .btn.active{  
+  border: 1px solid #4987F1;
+  color: #ffffff; 
+  background-color: #4987F1;
+}
+.sec-popular-location{
+  background-color: white;
+  padding: 64px;
+}
+.sec-popular-location h2{
+  font-family: "Noto Sans Thai", sans-serif;  
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  margin-bottom: 32px;
+} 
+.project-highlight{
+  padding: 32px 16px;
+  min-height: 818px;
+}
+.project-image img{
+  width: 100%;
+  max-width: 100%;
+  height: 368px; 
+  opacity: 1;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+.project-title{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px; 
+  line-height: 120%;  
+  color: #1A1A1A;
+}
+.project-desc{ 
+  margin-bottom: 25px;
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 400; 
+  font-size: 16px; 
+  line-height: 26px;  
+  color: #1A1A1A;
+}
+.project-price{ 
+  margin-bottom: 5px;
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 600; 
+  font-size: 16px; 
+  line-height: 26px;  
+  color: #1A1A1A;
+}
+.project-nearby{
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 400; 
+  font-size: 16px; 
+  line-height: 26px;  
+  color: #1A1A1A; 
+  margin-bottom: 25px;
+} 
+.project-highlight .btn-detail{
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 500; 
+  font-size: 15px; 
+  line-height: 26px;  
+  color: #ffffff;  
+  background-color: #54A956;
+  padding: 10px 16px;
+  height: 38px;
+  border-radius: 38px;
+}
+.sec-popular-location .see-more{
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 400; 
+  font-size: 20px; 
+  line-height: 26px;  
+  color: #1A1A1A;   
+  padding: 8px 16px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #1A1A1A;
+}
+.sec-promotion{
+  background-color: var(--primary-main3);
+  padding: 64px;
+}
+.sec-promotion h2{
+  font-family: "Noto Sans Thai", sans-serif;  
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  margin-bottom: 16px;
+  color: #fff;
+} 
+.sec-promotion h6{
+  font-family: "Noto Sans Thai", sans-serif;  
+  font-weight: 400; 
+  font-size: 24px; 
+  line-height: 120%; 
+  text-align: center;
+  vertical-align: middle; 
+  margin-bottom: 32px;
+  color: #fff;
+} 
+.sec-promotion .carousel-inner img{
+  border-radius: 10px;
+  height: 502px;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 25px;
+}   
+.sec-promotion .carousel-inner p{
+  font-family: "Noto Sans Thai", sans-serif; 
+  font-weight: 300; 
+  font-size: 14px; 
+  line-height: 24px; 
+  color: #fff;
+}  
+.sec-promotion .carousel-indicators{ 
+  bottom: -40px; 
+}
+.sec-promotion .carousel-indicators button{
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #D9D9D9;
+  opacity: 1;
+}
+.sec-promotion .carousel-indicators [data-bs-target]{
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #D9D9D9;
+  opacity: 1;
+}
+.sec-article{
+  background-color: #ffffff;
+  padding: 64px;
+}
+.sec-article h2{
+  font-family: "Noto Sans Thai", sans-serif;  
+  font-weight: 500; 
+  font-size: 48px; 
+  line-height: 120%; 
+  text-align: start;
+  vertical-align: middle;  
+  margin-bottom: 16px;
+} 
+.sec-article h6{
+  font-family: "Noto Sans Thai", sans-serif;  
+  font-weight: 400; 
+  font-size: 24px; 
+  line-height: 120%; 
+  text-align: start;
+  vertical-align: middle; 
+  margin-bottom: 32px; 
+} 
+.article-des img{ 
+  height: 191px; 
+  opacity: 1;
+  border-radius: 10px; 
+}
+.article-des img{ 
+  height: 191px; 
+  opacity: 1;
+  border-radius: 10px; 
+}
+.article-des h4{  
+  margin-top: 25px; 
+  margin-bottom: 25px; 
+  font-weight: 400; 
+  font-size: 24px; 
+  line-height: 100%;  
+  color: #000000;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   /* จำนวนบรรทัด */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.article-des p{  
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px; 
+  line-height: 100%;  
+  color: #374757;
+}
+
+
+
+
+
+
+/*  
+  transition: 0.3s; 
+  font-family: "Noto Sans Thai", sans-serif; 
+######################################################################################################
+###################################################################################################### 
+*/ 
+ 
+
+@media only screen and (max-width: 1024px) { /* MOBILE */
+  .mb-x{
+    display: none !important;
+  } 
+  .col-6.justify-content-center{
+    justify-content: end !important;
+  }
+  .banner-cover{
+    height: 373px;  
+    background: url('../images/bg-cover.jpg') center/cover no-repeat;
+  }
+  .banner-cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 373px;  
+    background: rgba(0,0,0,0.24); /* <= opacity 0.24 */
+  } 
+  .banner-cover h1{
+    font-size: 32px !important;
+    line-height: 40px;
+    margin-bottom: 10px;
+  font-family: "Noto Sans Thai", sans-serif; 
+  }
+  .banner-cover p{
+    font-size: 20px !important;
+    line-height: 20px;
+  font-family: "Noto Sans Thai", sans-serif; 
+  }
+  .banner-cover .btn{
+    font-size: 20px !important;
+    padding: 8px 24px !important;
+  }
+  .sec-form {
+    background: #f7f7f7; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .form-box{
+    padding-top: 34px;
+    padding-bottom: 34px;
+    border-radius: 0px;
+  }
+  .form-box h5{
+    font-size: 32px;
+  }
+  .form-box p{
+    font-size: 16px;
+  }
+  .sec-form .container > h2{
+    margin-top: 24px;
+    font-size: 32px;
+    padding-bottom: 16px;
+  }
+  .video-preview { 
+    height: 233px; 
+  }
+  .video-wrapper{
+    height: 233px;
+  }
+  .over-center{ 
+    width: 100%;
+    top: 40%;
+  }
+  .video-section h1{
+    font-size: 32px;
+  }
+  .play-btn{
+    width: 75px;
+    height: 53px;
+    background-size: 75px 53px;
+    top: calc(50% + 50px);
+  }
+  .video-section{
+    height: auto;
+  }
+  .sec-gallery{
+    padding: 64px 32px;
+  }
+  .sec-gallery h2{
+    font-size: 32px;
+  }
+  .gallery-img-wrap img {
+    height: 131px; 
+  }
+  .sec-pro-des{
+    padding: 62px 32px;
+  }
+  .sec-pro-des h5{
+    font-size: 32px;
+  }
+  .sec-pro-des h4{
+    font-size: 40px;
+  } 
+  .sec-pro-des img.pro-des{
+    height: 427px;
+  }
+  .sec-pro-des .btn-load{
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+  .sec-pro-des h6{
+    font-size: 20px;
+  }
+  .sec-pro-des p{
+    font-size: 14px;
+  }
+  .sec-pro-des ul li{
+    font-size: 14px; 
+  }
+  .sec-faci{
+    background-color: white;
+    padding: 64px 32px;
+  }
+  .sec-faci h2{
+    font-size: 32px;
+  }
+  .sec-faci .row.justify-content-center{
+    justify-content: start !important;
+  }
+  .sec-map{
+    padding: 64px 0px;
+    background-color: #f7f7f7;
+  }
+  .sec-map h2{  
+    font-size: 32px;  
+  }
+  .sec-map h3{  
+    font-size: 16px;  
+  }
+  .sec-map .container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .mmap .map{
+    height: 331px !important;
+  } 
+  .carousel-indicators button{
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+    opacity: 1;
+  }
+  .carousel-indicators [data-bs-target]{
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    background-color: #D9D9D9;
+    opacity: 1;
+  }
+  .sec-map .row.pc-x{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .carousel-indicators button.active{
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 100%;
+    background-color: var(--primary-main3);
+  }
+  .carousel-indicators{
+    bottom: -10px;
+  }
+  #carouselMap{ 
+    border: 1px solid #DADADA;
+    border-radius: 8px; 
+    padding-bottom: 30px;
+  }
+  #carouselMap h4{ 
+    font-size: 20px;
+  }
+  .row-list{
+    border: 1px solid #DADADA;
+    border-radius: 8px;  
+    margin-top: 16px;
+    padding: 24px;
+  }
+  .sec-plan{
+    background-color: white;
+    padding: 64px 32px;
+  }
+  .sec-plan h2{
+    font-size: 32px;
+  }
+  .nav-tabs .nav-item .nav-link{
+    font-size: 16px;
+  }
+  .sec-plan .tab-pane .carousel-item img {
+    height: 253px; 
+  }
+  .sec-plan .carousel-control-prev{
+    width: 31px;
+    height: 31px;
+  }
+  .sec-plan .carousel-control-next{
+    width: 31px;
+    height: 31px;
+  }
+  .sec-plan .carousel-control-prev img{ 
+    height: 13px;
+  }
+  .sec-plan .carousel-control-next img{
+    height: 13px;
+  }
+  .projectx { 
+    border-radius: 20px;
+    padding: 2px 4px;
+    width: 38px;
+    height: 21px;
+    display: block;
+    margin: auto;
+    line-height: 16px;
+  }
+  .projectx span{  
+    font-size: 14px;
+  }
+  .roomx { 
+    border-radius: 20px;
+    padding: 2px 4px;
+    width: 38px;
+    height: 21px;
+    display: block;
+    margin: auto;
+    line-height: 16px;
+  }
+  .roomx span{  
+    font-size: 14px;
+  }
+  .sec-project-intro{ 
+    padding: 64px 32px;
+  }
+  .sec-project-intro h2{
+    font-size: 32px;
+  }
+  .swiper-button-prev{
+    height: 48px !important;
+    width: 48px !important;
+  }
+  .swiper-button-prev img{
+    height: 20px;
+  }
+  .swiper-button-next{
+    height: 48px !important;
+    width: 48px !important;
+  }
+  .swiper-button-next img{
+    height: 20px;
+  }
+  footer { 
+    padding: 60px 32px;
+  }
+  footer .row1{
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    border-bottom: 0px solid rgba(255,255,255,0.08);
+  }
+  footer .row1 .flogo{
+    height: 45px;
+  }
+  footer p{ 
+    font-weight: 400; 
+    font-size: 15px; 
+    line-height: 28.5px; 
+    vertical-align: middle; 
+    color: white;
+    margin-top: 40px; 
+  }
+  footer h4{ 
+    margin-top: 80px;
+  }
+  footer .col-lg-8.ps-5.ps-5{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  footer h6{ 
+    margin-top: 10px !important; 
+  }
+  .sec-map{
+    overflow: hidden;
+  }
+  .sec-search{ 
+    padding: 40px 24px;
+    background-color: #f7f7f7;
+  }
+  .sec-search h2{
+    font-size: 32px;
+  }
+  .sec-search h4{
+    font-size: 16px;
+  }
+  .sec-search .container{
+    padding: 32px 8px 8px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .sec-search .btn{
+    font-size: 12px;
+  }
+  .sec-popular-location{ 
+    padding: 40px 0px;
+  }
+  .sec-popular-location h2{
+    font-size: 32px;
+  } 
+  .projectSwiper{
+    margin-bottom: 25px;
+  }
+  .sec-promotion{ 
+    padding: 64px 24px; 
+  }
+  .sec-promotion h2{
+    font-size: 32px;
+  }
+  .sec-promotion h6{
+    font-size: 20px;
+  }
+  .sec-promotion .carousel-inner img{
+    height: 278px;
+  }
+  .sec-article{ 
+    padding: 64px 24px; 
+  }
+  .sec-article h2{
+    font-size: 32px;
+  }
+  .article-des h4{
+    font-size: 20px;
+  }
+  .article-des p{
+    font-size: 14px;
+  }
+}  
+
+
+@media only screen and (min-width: 1025px) { 
+  .pc-x{
+    display: none !important;
+  }  
+  .form-box {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
+  }
+}  
+@media only screen and (min-width: 1025px) and (max-width: 1800px) { 
+   
+}   
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {   
+  
+}   
